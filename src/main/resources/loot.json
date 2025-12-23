@@ -1,0 +1,19 @@
+[
+    {
+        "id": "skeleton_extra_bones",
+        "priority": 10,
+        "enabled": true,
+        "conditions": {
+            "entityType": "SKELETON"
+        },
+        "actions": {
+            "addDrops": [
+                {
+                    "item": "minecraft:bone",
+                    "count": 2,
+                    "chance": 0.5
+                }
+            ]
+        }
+    }
+]

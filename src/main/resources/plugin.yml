@@ -1,0 +1,25 @@
+name: InControlMob
+version: '${project.version}'
+main: com.creativestylab.incontrolmob.InControlMob
+api-version: 1.21
+description: ${project.description}
+softdepend: [WorldGuard]
+authors: [CreativeStyleLab]
+
+commands:
+  incontrolmob:
+    description: Main command for InControlMob
+    usage: /<command> [reload|rules|rule]
+    aliases: [icm]
+    permission: incontrolmob.manage
+
+permissions:
+  incontrolmob.manage:
+    description: Allows management of InControlMob rules
+    default: op
+  incontrolmob.reload:
+    description: Allows reloading configuration
+    default: op
+  incontrolmob.test:
+    description: Allows testing rules
+    default: op

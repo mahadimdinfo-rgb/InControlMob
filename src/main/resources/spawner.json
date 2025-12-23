@@ -1,0 +1,14 @@
+[
+    {
+        "id": "spawner_replace_zombie_with_skeleton",
+        "priority": 10,
+        "enabled": true,
+        "conditions": {
+            "entityType": "ZOMBIE"
+        },
+        "actions": {
+            "replaceEntityType": "SKELETON",
+            "message": "Replaced Zombie spawner spawn with Skeleton"
+        }
+    }
+]

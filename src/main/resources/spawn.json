@@ -1,0 +1,45 @@
+[
+    {
+        "id": "deny_pigs_global",
+        "priority": 100,
+        "enabled": true,
+        "conditions": {
+            "entityType": "PIG"
+        },
+        "actions": {
+            "allow": false,
+            "message": "Pig spawn blocked by InControlMob"
+        }
+    },
+    {
+        "id": "strong_zombies_plains_night",
+        "priority": 50,
+        "enabled": true,
+        "conditions": {
+            "entityType": "ZOMBIE",
+            "biome": "PLAINS",
+            "timeOfDay": {
+                "from": 13000,
+                "to": 23000
+            }
+        },
+        "actions": {
+            "allow": true,
+            "setMaxHealth": 40.0,
+            "setHealth": 40.0,
+            "addPotionEffects": [
+                {
+                    "type": "SPEED",
+                    "duration": 600,
+                    "amplifier": 1
+                }
+            ],
+            "setEquipment": {
+                "mainHand": {
+                    "item": "minecraft:iron_sword",
+                    "count": 1
+                }
+            }
+        }
+    }
+]
